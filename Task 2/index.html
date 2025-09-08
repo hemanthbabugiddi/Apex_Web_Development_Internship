@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Responsive Layout</title>
+  <link rel="stylesheet" href="styles.css">
+  
+
+</head>
+<body>
+  <!-- Navbar -->
+ <nav>
+      <aside id="nav_one">
+        <h1>Activity_Task💻</h1>
+      </aside>
+      <aside id="nav_two">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </aside>
+    </nav>
+
+  <!-- Grid Layout -->
+  <main id="grid_layout">
+    <aside id="one_layout">
+      <h4>Grid_Layout</h4>
+      <h1>Created a Responsive Layout Using Flexbox and CSS Grid:</h1>
+      <p><strong>Objective:<strong> Build layouts that adapt to different screen sizes.</p>
+        <p><strong>Actions:</strong> Structure a webpage using Flexbox for navigation and CSS Grid for content areas, and apply media queries for responsiveness</p>
+    </aside>
+  <!-- Contact Form -->
+   <aside id="two_layout">
+  <form id="registrationForm">
+    <fieldset>
+      <legend>Registration Form👋</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter Your Name">
+      <p id="nameFieldErrorMessage"></p>
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter Your Email">
+      <p id="emailFieldErrorMessage"></p>
+      <br><br>
+
+      <label for="phone">Phone No:</label>
+      <input type="text" id="phone" placeholder="Enter Your Phone Number">
+      <p id="phoneFieldErrorMessage"></p>
+      <br><br>
+
+      <button type="submit" >Register </button>
+    </fieldset>
+  </form>
+  </aside>
+
+  </main>
+
+<!-- To Do-List -->
+  <div id="container">
+  <h1>📝 To-Do List</h1>
+<form id="list" action="">
+  <label for="taskInput">Enter a new Task:</label>
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  <button id="addTaskBtn">Add Task</button>
+
+  <ul id="taskList"></ul>
+</form>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
