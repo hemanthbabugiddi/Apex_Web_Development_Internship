@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Creating Responsive Design, Creating a Quiz & Genrating a Random Joke</h1>
+
+  <!-- 1. Responsive Design Section -->
+  <section>
+    <h2>Responsive Design Example</h2>
+    <p>Resize the browser to see text size adjust (media queries in action)</p>
+  </section>
+
+  <!-- 2. Interactive Quiz -->
+  <section>
+    <h2>Mini Quiz</h2>
+    <p id="quizQuestion"></p>
+    <div id="quizOptions"></div>
+    <button id="nextBtn">Next Question</button>
+    <p id="quizResult"></p>
+  </section>
+
+  <!-- 3. Fetch API Example -->
+  <section>
+    <h2>Random Joke Generator (API Fetch)</h2>
+    <div id="joke">Loading joke...</div>
+    <button onclick="fetchJoke()">Get New Joke</button>
+  </section>
+
+  <script src="./script.js">
+  </script>
+</body>
+</html>
