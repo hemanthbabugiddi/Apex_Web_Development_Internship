@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Hemanth</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<nav class="nav container">
+  <a class="brand" href="index.html">Hemanth Babu Giddi</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<main class="container projects-page">
+<h1>Projects</h1>
+
+<section class="project-group">
+  <article class="project-card">
+    <h2>To-Do List (Local Storage)</h2>
+    <p>A simple task manager that persists tasks to localStorage.</p>
+    <a class="btn" href="#todo-demo">Open Demo</a>
+  </article>
+
+  <article class="project-card">
+    <h2>Product Listing (Filter & Sort)</h2>
+    <p>Filter by category and sort by price or rating.</p>
+    <a class="btn" href="#products-demo">Open Demo</a>
+  </article>
+</section>
+
+<hr>
+
+<!-- To-Do Demo -->
+<section id="todo-demo" class="demo container demo-box">
+  <h2>To-Do App</h2>
+  <div class="todo-wrap">
+    <div class="todo-input">
+      <input id="taskInput" type="text" placeholder="Add a new task">
+      <button id="addTaskBtn" class="btn">Add</button>
+    </div>
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+</section>
+
+<!-- Products Demo -->
+<section id="products-demo" class="demo container demo-box">
+  <h2>Product Listing</h2>
+  <div class="filter-bar">
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="electronics">Electronics</button>
+    <button class="filter-btn" data-category="fashion">Fashion</button>
+    <button class="filter-btn" data-category="home">Home</button>
+    <select id="sortSelect">
+      <option value="">Sort</option>
+      <option value="price-low">Price: Low to High</option>
+      <option value="price-high">Price: High to Low</option>
+      <option value="rating">Rating</option>
+    </select>
+  </div>
+
+  <div id="productGrid" class="product-grid">
+    <div class="product-card electronics" data-price="999" data-rating="4.8">
+      <h3>Bluetooth Headphones</h3>
+      <p>Price: ₹999 | Rating: 4.8</p>
+    </div>
+    <div class="product-card fashion" data-price="499" data-rating="4.1">
+      <h3>Casual T-Shirt</h3>
+      <p>Price: ₹499 | Rating: 4.1</p>
+    </div>
+    <div class="product-card home" data-price="799" data-rating="4.6">
+      <h3>LED Table Lamp</h3>
+      <p>Price: ₹799 | Rating: 4.6</p>
+    </div>
+    <div class="product-card electronics" data-price="1299" data-rating="4.9">
+      <h3>Smart Watch</h3>
+      <p>Price: ₹1299 | Rating: 4.9</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2025 Hemanth Babu</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
